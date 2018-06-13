@@ -15,7 +15,7 @@
 <body>
   <div class="slds-panel slds-size_medium slds-panel_docked slds-panel_docked-left slds-is-directional slds-is-open" aria-hidden="false">
     <div class="slds-panel__header">
-      <h2 class="slds-panel__header-title slds-text-heading_small">Flow Tools</h2>
+      <h2 class="slds-panel__header-title slds-text-heading_small">Resource Manager</h2>
       <button class="slds-button slds-button_icon slds-panel__close slds-button_icon-small" title="Close details Panel">
         <svg class="slds-button__icon" aria-hidden="true">
         <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#back"></use>
@@ -32,7 +32,7 @@
                 <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#type_tool"></use>
               </svg>
             </span>
-            <span class="slds-align-middle">Resource Item</span>
+            <span class="slds-align-middle">Variable Resource</span>
             <button id="detail_one" class="slds-button slds-button_icon slds-col_bump-left">
               <svg class="slds-button__icon" aria-hidden="true">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevronright" />
@@ -127,12 +127,15 @@
   $(function() {
     var trigger = $("#detail_one");
     var panel = $(".slds-panel");
+    var header = panel.find(".slds-panel__header-title");
     var back = $(".slds-panel__close");
     trigger.on("click" , function(){
       panel.addClass("show_details");
+      header.text("Variable Resource");
     })
     back.on("click" , function(){
       panel.removeClass("show_details");
+      header.text("Resource Manager");
     })
   });
   </script>
