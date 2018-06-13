@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flow Builder Left Panel</title>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <meta name="robots" content="noindex, nofollow" />
+  <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.2.min.js"></script>
+
+  <!-- Prototype styles -->
+  <link rel="stylesheet" href="/styles/index.css" />
+</head>
+<body>
+  <div class="slds-panel slds-size_medium slds-panel_docked slds-panel_docked-left slds-is-directional slds-is-open" aria-hidden="false">
+    <div class="slds-panel__header">
+      <h2 class="slds-panel__header-title slds-text-heading_small">Flow Tools</h2>
+      <button class="slds-button slds-button_icon slds-panel__close slds-button_icon-small" title="Close details Panel">
+        <svg class="slds-button__icon" aria-hidden="true">
+        <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#back"></use>
+      </svg>
+      <span class="slds-assistive-text">Close Filter Panel</span>
+      </button>
+    </div>
+    <div class="slds-panel__body slds-grid">
+      <div class="flow_resource_list">
+        <ul class="slds-has-dividers_bottom-space">
+          <li class="slds-grid slds-item">
+            <span class="slds-icon_container null slds-icon__svg--default slds-p-right_small">
+              <svg class="slds-icon slds-icon-text-default slds-icon_x-small slds-align-top" aria-hidden="true">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#type_tool"></use>
+              </svg>
+            </span>
+            <span class="slds-align-middle">Resource Item</span>
+            <button id="detail_one" class="slds-button slds-button_icon slds-col_bump-left">
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevronright" />
+              </svg>
+              <span class="slds-assistive-text">Provide description of action</span>
+            </button>
+          </li>
+          <li class="slds-grid slds-item">
+            <span class="slds-icon_container null slds-icon__svg--default slds-p-right_small">
+              <svg class="slds-icon slds-icon-text-default slds-icon_x-small slds-align-top" aria-hidden="true">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#type_tool"></use>
+              </svg>
+            </span>
+            <span class="slds-align-middle">Resource Item</span>
+            <button class="slds-button slds-button_icon slds-col_bump-left">
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevronright" />
+              </svg>
+              <span class="slds-assistive-text">Provide description of action</span>
+            </button>
+          </li>
+          <li class="slds-grid slds-item">
+            <span class="slds-icon_container null slds-icon__svg--default slds-p-right_small">
+              <svg class="slds-icon slds-icon-text-default slds-icon_x-small slds-align-top" aria-hidden="true">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#type_tool"></use>
+              </svg>
+            </span>
+            <span class="slds-align-middle">Resource Item</span>
+            <button class="slds-button slds-button_icon slds-col_bump-left">
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevronright" />
+              </svg>
+              <span class="slds-assistive-text">Provide description of action</span>
+            </button>
+          </li>
+          <li class="slds-grid slds-item">
+            <span class="slds-icon_container null slds-icon__svg--default slds-p-right_small">
+              <svg class="slds-icon slds-icon-text-default slds-icon_x-small slds-align-top" aria-hidden="true">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#type_tool"></use>
+              </svg>
+            </span>
+            <span class="slds-align-middle">Resource Item</span>
+            <button class="slds-button slds-button_icon slds-col_bump-left">
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevronright" />
+              </svg>
+              <span class="slds-assistive-text">Provide description of action</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+      <!-- //flow resource list -->
+      <div class="flow_resource_detail">
+        <div class="slds-text-title_caps slds-m-bottom_small">Details</div>
+
+
+
+        <ul class="slds-has-dividers_bottom-space">
+          <li class="slds-item slds-grid">
+            <span class="slds-form-element__label">Type:</span>
+            <span class="slds-icon_container null slds-icon__svg--default slds-align-middle slds-m-right_xx-small">
+              <svg class="slds-icon slds-icon-text-default slds-icon_x-small slds-align-top" aria-hidden="true">
+                <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#type_tool">
+                </use>
+              </svg>
+            </span>
+            <span class="slds-text-body_regular slds-align-middle">Variable</span>
+          </li>
+          <li class="slds-item slds-grid">
+            <span class="slds-form-element__label">Input Output Type:</span>
+            <span class="slds-text-body_regular slds-align-middle">Output Only</span>
+          </li>
+          <li class="slds-item slds-grid">
+            <span class="slds-form-element__label">Default Value:</span>
+            <span class="slds-text-body_regular slds-align-middle">Not Provided</span>
+          </li>
+          <li class="slds-item slds-grid">
+            <span class="slds-form-element__label">Description:</span>
+            <span class="slds-text-body_regular slds-align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, maiores aperiam. Aut, beatae pariatur quasi modi veniam dignissimos iste nulla quam sequi. Amet, omnis, esse. Quo assumenda beatae quasi doloremque.</span>
+          </li>
+
+        </ul>
+
+      </div>
+    </div><!-- //slds-panel__body -->
+  </div> <!-- //slds-panel -->
+
+  <script src="/scripts/app.js"></script>
+  <script src="/scripts/vendor/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
+  <script>
+  $(function() {
+    var trigger = $("#detail_one");
+    var panel = $(".slds-panel");
+    var back = $(".slds-panel__close");
+    trigger.on("click" , function(){
+      panel.addClass("show_details");
+    })
+    back.on("click" , function(){
+      panel.removeClass("show_details");
+    })
+  });
+  </script>
+</body>
+</html>
