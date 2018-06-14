@@ -49,7 +49,7 @@ html,body{
   height: 100%;
 }
 
-$panel-width: 290px;
+$panel-width: 320px;
 .slds-panel{
   overflow-x: hidden;
   .slds-panel__header{
@@ -58,17 +58,6 @@ $panel-width: 290px;
   .slds-panel__close{
     transform: translateX(-42px);
     transition: transform $duration-slide ease;
-  }
-  .spacer{
-    flex: none;
-    transition: width $duration-slide ease;
-    width: $panel-width;
-  }
-  footer{
-    opacity: 0;
-    width: 100%;
-    transition: opacity $duration-promptly ease;
-    flex: none;
   }
 }
 .flow_resource_detail,
@@ -84,12 +73,6 @@ $panel-width: 290px;
 .show_details{
   .slds-panel__close{
     transform: translateX(0px);
-  }
-  .spacer{
-    width: 0;
-  }
-  footer{
-    opacity: 1;
   }
   .flow_resource_list{
     opacity: 0;

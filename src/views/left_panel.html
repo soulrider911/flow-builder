@@ -13,7 +13,7 @@
 </head>
 <body>
   <div class="slds-panel slds-size_medium slds-panel_docked slds-panel_docked-left slds-is-directional slds-is-open" aria-hidden="false">
-    <div class="slds-panel__header slds-p-left_medium">
+    <div class="slds-panel__header slds-p-left_medium slds-m-bottom_medium">
       <h2 class="slds-text-heading_small">Resource Manager</h2>
       <button class="slds-button slds-button_icon slds-panel__close slds-button_icon-small" title="Close details Panel">
         <svg class="slds-button__icon" aria-hidden="true">
@@ -22,7 +22,7 @@
       <span class="slds-assistive-text">Close Filter Panel</span>
       </button>
     </div>
-    <div class="slds-panel__body slds-grid">
+    <div class="slds-panel__body slds-p-around_none slds-grid">
       <div class="flow_resource_list">
         <ul class="slds-has-dividers_bottom-space">
           <li class="slds-grid slds-item">
@@ -85,9 +85,9 @@
       </div>
       <!-- //flow resource list -->
       <div class="flow_resource_detail slds-hide">
-        <div class="slds-text-title_caps slds-m-bottom_x-small">Details</div>
+        <div class="slds-text-title_caps slds-p-horizontal_medium slds-m-bottom_small">Details</div>
 
-        <ul class="">
+        <ul class="slds-p-horizontal_medium slds-m-bottom_medium">
           <li class="slds-item slds-p-vertical_xxx-small">
             <span class="slds-form-element__label">Type:</span>
             <span class="slds-icon_container null slds-icon__svg--default slds-align-middle">
@@ -110,17 +110,13 @@
             <span class="slds-form-element__label">Description:</span>
             <span class="slds-text-body_regular slds-align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, maiores aperiam. Aut, beatae pariatur quasi modi veniam dignissimos iste nulla quam sequi. Amet, omnis, esse. Quo assumenda beatae quasi doloremque.</span>
           </li>
-
         </ul>
+        <footer class="slds-p-around_medium slds-border_top slds-border_bottom slds-text-align_right">
+          <button class="slds-button slds-button_neutral">Delete</button>
+          <button class="slds-button slds-button_brand">Edit</button>
+        </footer>
       </div>
     </div><!-- //slds-panel__body -->
-    <div class="slds-grid">
-    <div class="spacer"></div>
-      <footer class="slds-p-around_medium slds-border_top slds-border_bottom slds-text-align_right">
-        <button class="slds-button slds-button_neutral">Delete</button>
-        <button class="slds-button slds-button_brand">Edit</button>
-      </footer>
-    </div>
   </div> <!-- //slds-panel -->
 
   <script src="/scripts/app.js"></script>
@@ -134,19 +130,16 @@
     var header = panel.find(".slds-panel__header");
     var back = $(".slds-panel__close");
     var resource_detail = $(".flow_resource_detail");
-    var footer = $(".slds-panel").find("footer");
     trigger.on("click" , function(){
       panel.addClass("show_details");
       header.removeClass("slds-p-left_medium").find("h2").text("Variable Resource");
       resource_detail.removeClass("slds-hide");
-      footer.removeClass("slds-hide");
     })
     back.on("click" , function(){
       panel.removeClass("show_details");
       header.addClass("slds-p-left_medium").find("h2").text("Resource Manager");
       setTimeout(function(){
         resource_detail.addClass("slds-hide");
-        //footer.addClass("slds-hide");
       }, 1000);
     });
   });
