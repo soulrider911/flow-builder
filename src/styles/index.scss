@@ -41,29 +41,36 @@ $static-font-path: '/assets/fonts/webfonts';
   left: 0;
 }
 
-$panel-width: 290px;
-.slds-panel{
-  overflow-x: hidden;
-}
+/* -------------------
+// Resource panel
+------------------- */
 html,body{
   min-height: 100%;
   height: 100%;
+}
+
+$panel-width: 290px;
+.slds-panel{
+  overflow-x: hidden;
+  .slds-panel__header{
+    transition: padding $duration-slide ease;
+  }
+  .slds-panel__close{
+    transform: translateX(-42px);
+    transition: transform $duration-slide ease;
+  }
 }
 .flow_resource_detail,
 .flow_resource_list{
   width: 100%;
   flex: none;
-  transition: margin .2s ease-in-out, opacity .15s ease, visibility .15s ease;
+  transition: margin $duration-slide ease-in-out, opacity $duration-promptly ease, visibility $duration-promptly ease;
 }
 .flow_resource_detail{
   opacity: 0;
   visibility: hidden;
 }
 //transition state
-.slds-panel__close{
-  transform: translateX(-50px);
-  transition: transform .2s ease;
-}
 .show_details{
   .slds-panel__close{
     transform: translateX(0px);
@@ -76,8 +83,4 @@ html,body{
     opacity: 1;
     visibility: visible;
   }
-}
-//easier than adding tons of padding classes
-.slds-has-dividers_bottom-space > .slds-item{
-  border: none
 }

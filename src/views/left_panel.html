@@ -13,8 +13,8 @@
 </head>
 <body>
   <div class="slds-panel slds-size_medium slds-panel_docked slds-panel_docked-left slds-is-directional slds-is-open" aria-hidden="false">
-    <div class="slds-panel__header">
-      <h2 class="slds-panel__header-title slds-text-heading_small">Resource Manager</h2>
+    <div class="slds-panel__header slds-p-left_medium">
+      <h2 class="slds-text-heading_small">Resource Manager</h2>
       <button class="slds-button slds-button_icon slds-panel__close slds-button_icon-small" title="Close details Panel">
         <svg class="slds-button__icon" aria-hidden="true">
         <use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#back"></use>
@@ -84,10 +84,8 @@
         </ul>
       </div>
       <!-- //flow resource list -->
-      <div class="flow_resource_detail">
+      <div class="flow_resource_detail slds-hide">
         <div class="slds-text-title_caps slds-m-bottom_small">Details</div>
-
-
 
         <ul class="slds-has-dividers_bottom-space">
           <li class="slds-item slds-grid">
@@ -100,20 +98,22 @@
             </span>
             <span class="slds-text-body_regular slds-align-middle">Variable</span>
           </li>
-          <li class="slds-item slds-grid">
+          <li class="slds-item">
             <span class="slds-form-element__label">Input Output Type:</span>
             <span class="slds-text-body_regular slds-align-middle">Output Only</span>
           </li>
-          <li class="slds-item slds-grid">
+          <li class="slds-item">
             <span class="slds-form-element__label">Default Value:</span>
             <span class="slds-text-body_regular slds-align-middle">Not Provided</span>
           </li>
-          <li class="slds-item slds-grid">
+          <li class="slds-item">
             <span class="slds-form-element__label">Description:</span>
             <span class="slds-text-body_regular slds-align-middle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, maiores aperiam. Aut, beatae pariatur quasi modi veniam dignissimos iste nulla quam sequi. Amet, omnis, esse. Quo assumenda beatae quasi doloremque.</span>
           </li>
 
         </ul>
+
+
 
       </div>
     </div><!-- //slds-panel__body -->
@@ -127,16 +127,22 @@
   $(function() {
     var trigger = $("#detail_one");
     var panel = $(".slds-panel");
-    var header = panel.find(".slds-panel__header-title");
+    var header = panel.find(".slds-panel__header");
     var back = $(".slds-panel__close");
+    var resource_detail = $(".flow_resource_detail");
     trigger.on("click" , function(){
       panel.addClass("show_details");
-      header.text("Variable Resource");
+      header.removeClass("slds-p-left_medium").find("h2").text("Variable Resource");
+      resource_detail.removeClass("slds-hide");
+
     })
     back.on("click" , function(){
       panel.removeClass("show_details");
-      header.text("Resource Manager");
-    })
+      header.addClass("slds-p-left_medium").find("h2").text("Resource Manager");
+      setTimeout(function(){
+        resource_detail.addClass("slds-hide");
+      }, 1000);
+    });
   });
   </script>
 </body>
