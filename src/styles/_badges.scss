@@ -3,6 +3,8 @@
   text-transform: lowercase;
   font-size: 12px;
   font-weight: bold;
+  display: inline-block;
+  max-width: 230px;
   &:focus{
     outline: none;
   }
