@@ -1,0 +1,73 @@
+
+.slds-badge{
+  text-transform: lowercase;
+  font-size: 12px;
+  font-weight: bold;
+  &:focus{
+    outline: none;
+  }
+}
+//Base Variants
+.slds-badge{
+  //Base styles
+  &.slds-badge_brand{
+    color: white;
+    background: $color-background-brand-primary;
+  }
+  &.slds-badge_destructive{
+    color: white;
+    background: $color-background-destructive;
+  }
+  &.slds-badge_success{
+    background: $color-background-success-dark;
+    color: white;
+  }
+  &.slds-badge_warning{
+    background: $color-background-warning;
+    color: #3e3e3c;
+  }
+}
+
+//lightest Variants
+.slds-badge.slds-badge_lightest{
+  //Base styles
+  background: white;
+  &:hover{
+    border-color: $color-border-brand-primary-hover;
+    color: $color-text-button-default-hover;
+  }
+  &:focus{
+    border-color: $color-border-brand-primary-focus;
+    box-shadow: $shadow-button-focus;
+    color: $color-text-button-default-hover;
+  }
+  //Destructive styles
+  &.slds-badge_destructive{
+    border-color: $color-border-destructive;
+    color: $color-text-error;
+    svg{
+      fill: $color-text-error;
+    }
+    &:hover{
+      border-color: $color-border-destructive-hover;
+    }
+    &:focus{
+      border-color: $color-border-destructive-hover;
+      box-shadow: 0 0 3px $color-background-destructive;
+    }
+  }
+  &.slds-badge_success{
+    border-color: $color-background-button-success-hover;
+    color: $color-text-success;
+    svg{
+      fill: $color-text-success;
+    }
+    &:hover{
+      border-color: $color-background-button-success-hover;
+    }
+    &:focus{
+      border-color: $color-background-button-success-active;
+      box-shadow: 0 0 3px $color-background-button-success;
+    }
+  }
+}

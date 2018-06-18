@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flow Builder Left Panel</title>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Prototype styles -->
+  <link rel="stylesheet" href="/styles/index.css" />
+</head>
+<body>
+  <div class="slds-p-around--large slds-container--center slds-container--medium">
+    <h1 class="slds-text-heading--large">SLDS Badge Variants Examples</h1>
+    <br>
+    <p>In flow builder, and many others, we are using badges on lines to label connectors in flow products. However there is a need for additional visual styles for errors, connector hover states, and "focus." </p><br>
+    <p>In 220 we should have these variants in SLDS, until then we need to roll our own, here are some examples</p>
+    <hr>
+    <h2 class="slds-text-heading--medium">Variant Badges</h2>
+    <p>State variants of the default badge</p>
+    <br>
+    <span class="slds-badge slds-badge_brand" tabindex="1">Base Badge</span>
+    <span class="slds-badge slds-badge_destructive" tabindex="1">Destructive Badge</span>
+    <span class="slds-badge slds-badge_success" tabindex="1">Success Badge</span>
+    <span class="slds-badge slds-badge_warning" tabindex="1">Warning Badge</span>
+
+    <hr>
+
+    <h2 class="slds-text-heading--medium">Variant Badges Lightest - <strong>Flow Products</strong></h2>
+    <p>Lightest variants for use in flow products. These will need focus states, as they sit atop a hoverable and focusable connector line and will need to retain statful styles as well.</p>
+    <br>
+    <p>Optionally could use icons as well</p>
+    <br>
+    <span class="slds-badge slds-badge_lightest" tabindex="1">Base Badge</span>
+    <span class="slds-badge slds-badge_lightest slds-badge_destructive" tabindex="1">
+      <svg class="slds-icon slds-icon_xx-small slds-icon-text-default" aria-hidden="true"><use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#error"></use></svg>
+      Destructive Badge
+    </span>
+    <span class="slds-badge slds-badge_lightest slds-badge_success" tabindex="1">
+      <svg class="slds-icon slds-icon_xx-small slds-icon-text-default" aria-hidden="true"><use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use></svg>
+      Success Badge
+    </span>
+</div>
+
+  <script src="/scripts/app.js"></script>
+  <script type="text/javascript" src="/scripts/jquery.js"></script>
+  <script src="/scripts/vendor/svg4everybody.min.js"></script>
+  <script>svg4everybody();</script>
+</body>
+</html>
