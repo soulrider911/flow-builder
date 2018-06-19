@@ -1,6 +1,6 @@
 
 .slds-badge{
-  text-transform: lowercase;
+  text-transform: none;
   font-size: 12px;
   font-weight: bold;
   display: inline-block;
@@ -47,7 +47,7 @@
   &.slds-badge_destructive{
     border-color: $color-border-destructive;
     color: $color-text-error;
-    svg{
+    >svg{
       fill: $color-text-error;
     }
     &:hover{
@@ -61,7 +61,7 @@
   &.slds-badge_success{
     border-color: $color-background-button-success-hover;
     color: $color-text-success;
-    svg{
+    >svg{
       fill: $color-text-success;
     }
     &:hover{

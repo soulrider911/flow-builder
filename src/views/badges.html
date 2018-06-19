@@ -19,7 +19,8 @@
     <p>In 220 we should have these variants in SLDS, until then we need to roll our own, here are some examples</p>
     <hr>
     <h2 class="slds-text-heading--medium">Variant Badges</h2>
-    <p>State variants of the default badge</p>
+    <br>
+    <p class="slds-text-heading--small">State variants of the default badge</p>
     <br>
     <span class="slds-badge slds-badge_brand" tabindex="1">Base Badge</span>
     <span class="slds-badge slds-badge_destructive" tabindex="1">Destructive Badge</span>
@@ -29,6 +30,9 @@
     <hr>
 
     <h2 class="slds-text-heading--medium">Variant Badges Lightest - <strong>Flow Products</strong></h2>
+    <br>
+    <p class="slds-text-heading--small">State variants of the slds-badge_lightest</p>
+    <br>
     <p>Lightest variants for use in flow products. These will need focus states, as they sit atop a hoverable and focusable connector line and will need to retain statful styles as well.</p>
     <br>
     <p>Optionally could use icons as well</p>
@@ -42,11 +46,61 @@
       <svg class="slds-icon slds-icon_xx-small slds-icon-text-default" aria-hidden="true"><use xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#check"></use></svg>
       Success Badge
     </span>
-</div>
 
+    <hr>
+
+    <h2 class="slds-text-heading--medium">Badges with tool tips - <strong>Header builders</strong></h2>
+    <br>
+    <p>In builder headers, some with use badges to indicate status. The badges need to have a tool tip to display additional definition of the status'</p><br>
+    <div class="slds-form-element">
+      <span class="slds-badge slds-badge_lightest slds-badge_success">
+        <span class="slds-text-color_success">Activated</span>
+        <button class="slds-button slds-button_icon slds-align-top">
+          <svg class="slds-button__icon" aria-hidden="true">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#info" />
+          </svg>
+          <span class="slds-assistive-text">Provide description of action</span>
+        </button>
+      </span>
+      <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left slds-hidden" role="tooltip" id="help" style="position: absolute; top: 37px; left: 51px;">
+        <div class="slds-popover__body">You last saved this version on 10/27/2017 3:15PM</div>
+    </div>
+  </div>
+  <br>
+  <div class="slds-form-element">
+    <span class="slds-badge slds-badge_lightest">
+      Deactivated
+      <button class="slds-button slds-button_icon slds-align-top">
+        <svg class="slds-button__icon" aria-hidden="true">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#info" />
+        </svg>
+        <span class="slds-assistive-text">Provide description of action</span>
+      </button>
+    </span>
+    <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left slds-hidden" role="tooltip" id="help" style="position: absolute; top: 37px; left: 68px;">
+      <div class="slds-popover__body">Tom Sawyer last activated this version on 9/22/2013 2:09AM</div>
+  </div>
+</div>
+</div>
   <script src="/scripts/app.js"></script>
   <script type="text/javascript" src="/scripts/jquery.js"></script>
   <script src="/scripts/vendor/svg4everybody.min.js"></script>
   <script>svg4everybody();</script>
+  <script>
+    $(function(){
+      $(".slds-button_icon").hover(function(){
+        $(this).parent().next().removeClass("slds-hidden");
+      },function(){
+        $(this).parent().next().addClass("slds-hidden");
+      });
+
+      $(".slds-button_icon").focus(function(){
+        $(this).parent().next().removeClass("slds-hidden");
+      })
+      $(".slds-button_icon").blur(function(){
+        $(this).parent().next().addClass("slds-hidden");
+      })
+    })
+  </script>
 </body>
 </html>
