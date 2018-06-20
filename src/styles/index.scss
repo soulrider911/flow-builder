@@ -91,19 +91,19 @@ $panel-width: 320px;
 .header__utilities{
   border-bottom: 1px solid $button-color-border-primary;
   .button-group{
-    display: inline-block;
+    display: inline-flex;
     .slds-button{
       border-radius: 0;
-      margin-left: -5px;
+      margin-left: -1px;
     }
-    .slds-button:last-child{
+    *:last-child{
       border-radius: 0 .25rem .25rem 0;
     }
-    .slds-button:first-child{
+    *:first-child{
       border-radius: .25rem 0 0 .25rem;
       margin-left: 0;
     }
-    .slds-button:only-child{
+    *:only-child{
       border-radius: .25rem;
     }
   }
