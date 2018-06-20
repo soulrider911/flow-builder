@@ -12,119 +12,157 @@
   <link rel="stylesheet" href="/styles/index.css" />
 </head>
 <body>
-      <div class="slds-builder-header_container">
-        <header class="slds-builder-header">
-          <div class="slds-builder-header__item">
-            <div class="slds-builder-header__item-label slds-media slds-media_center">
-              <div class="slds-media__figure">
-                <span class="slds-icon_container slds-icon-utility-builder slds-current-color">
-                  <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
-                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#builder" />
-                  </svg>
-                </span>
-              </div>
-              <div class="slds-media__body">App Name</div>
-            </div>
-          </div>
-          <nav class="slds-builder-header__item slds-builder-header__nav">
-            <ul class="slds-builder-header__nav-list">
-              <li class="slds-builder-header__nav-item">
-                <a href="javascript:void(0);" class="slds-builder-header__item-action slds-media slds-media_center">
-                  <span class="slds-media__figure">
-                    <span class="slds-icon_container slds-icon-utility-settings slds-current-color">
-                      <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#settings" />
-                      </svg>
-                    </span>
-                  </span>
-                  <span class="slds-media__body">
-                    <span class="slds-truncate" title="Link">Link</span>
-                  </span>
-                </a>
-              </li>
-              <li class="slds-builder-header__nav-item">
-                <button class="slds-button slds-builder-header__item-action slds-media slds-media_center" aria-haspopup="true" title="Click to open menu">
-                  <span class="slds-media__figure">
-                    <span class="slds-icon_container slds-icon-utility-page slds-current-color">
-                      <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#page" />
-                      </svg>
-                    </span>
-                  </span>
-                  <span class="slds-media__body">
-                    <span class="slds-truncate" title="Dropdown">Dropdown</span>
-                    <span class="slds-icon_container slds-icon-utility-chevrondown slds-current-color slds-m-left_small">
-                      <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown" />
-                      </svg>
-                    </span>
-                  </span>
-                </button>
-              </li>
-            </ul>
-          </nav>
-          <div class="slds-builder-header__item">
-            <h1 class="slds-builder-header__item-label">Page Type</h1>
-          </div>
-          <div class="slds-builder-header__item slds-builder-header__utilities">
-            <div class="slds-builder-header__utilities-item">
-              <a href="javascript:void(0);" class="slds-builder-header__item-action slds-media slds-media_center">
-                <div class="slds-media__figure">
-                  <span class="slds-icon_container slds-icon-utility-back slds-current-color">
-                    <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#back" />
-                    </svg>
-                  </span>
-                </div>
-                <div class="slds-media__body">Back</div>
-              </a>
-            </div>
-            <div class="slds-builder-header__utilities-item">
-              <a href="javascript:void(0);" class="slds-builder-header__item-action slds-media slds-media_center">
-                <div class="slds-media__figure">
-                  <span class="slds-icon_container slds-icon-utility-help slds-current-color">
-                    <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
-                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#help" />
-                    </svg>
-                  </span>
-                </div>
-                <div class="slds-media__body">Help</div>
-              </a>
-            </div>
-          </div>
-        </header>
-        <div class="header__utilities slds-p-horizontal_medium slds-p-vertical_x-small">
-          <button class="slds-button slds-button_icon slds-button_icon-border-filled">
-            <svg class="slds-button__icon" aria-hidden="true">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#undo" />
-            </svg>
-            <span class="slds-assistive-text">Undo</span>
-          </button>
-          <button class="slds-button slds-button_icon slds-button_icon-border-filled">
-            <svg class="slds-button__icon" aria-hidden="true">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#redo" />
-            </svg>
-            <span class="slds-assistive-text">Redo</span>
-          </button>
-          <div class="button-group slds-m-left_xx-small" role="group">
-            <button class="slds-button slds-button_icon slds-button_icon-border-filled">
-              <svg class="slds-button__icon" aria-hidden="true">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#cut" />
+  <div class="slds-builder-header_container">
+    <header class="slds-builder-header">
+      <div class="slds-builder-header__item">
+        <div class="slds-builder-header__item-label slds-media slds-media_center">
+          <div class="slds-media__figure">
+            <span class="slds-icon_container slds-icon-utility-builder slds-current-color">
+              <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#builder" />
               </svg>
-            </button>
-            <button class="slds-button slds-button_icon slds-button_icon-border-filled">
-              <svg class="slds-button__icon" aria-hidden="true">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#copy" />
-              </svg>
-            </button>
-            <button class="slds-button slds-button_icon slds-button_icon-border-filled">
-              <svg class="slds-button__icon" aria-hidden="true">
-                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#paste" />
-              </svg>
-            </button>
+            </span>
           </div>
+          <div class="slds-media__body">App Name</div>
         </div>
       </div>
+      <nav class="slds-builder-header__item slds-builder-header__nav">
+        <ul class="slds-builder-header__nav-list">
+          <li class="slds-builder-header__nav-item">
+            <a href="javascript:void(0);" class="slds-builder-header__item-action slds-media slds-media_center">
+              <span class="slds-media__figure">
+                <span class="slds-icon_container slds-icon-utility-settings slds-current-color">
+                  <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#settings" />
+                  </svg>
+                </span>
+              </span>
+              <span class="slds-media__body">
+                <span class="slds-truncate" title="Link">Link</span>
+              </span>
+            </a>
+          </li>
+          <li class="slds-builder-header__nav-item">
+            <button class="slds-button slds-builder-header__item-action slds-media slds-media_center" aria-haspopup="true" title="Click to open menu">
+              <span class="slds-media__figure">
+                <span class="slds-icon_container slds-icon-utility-page slds-current-color">
+                  <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#page" />
+                  </svg>
+                </span>
+              </span>
+              <span class="slds-media__body">
+                <span class="slds-truncate" title="Dropdown">Dropdown</span>
+                <span class="slds-icon_container slds-icon-utility-chevrondown slds-current-color slds-m-left_small">
+                  <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#chevrondown" />
+                  </svg>
+                </span>
+              </span>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <div class="slds-builder-header__item">
+        <h1 class="slds-builder-header__item-label">Page Type</h1>
+      </div>
+      <div class="slds-builder-header__item slds-builder-header__utilities">
+        <div class="slds-builder-header__utilities-item">
+          <a href="javascript:void(0);" class="slds-builder-header__item-action slds-media slds-media_center">
+            <div class="slds-media__figure">
+              <span class="slds-icon_container slds-icon-utility-back slds-current-color">
+                <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#back" />
+                </svg>
+              </span>
+            </div>
+            <div class="slds-media__body">Back</div>
+          </a>
+        </div>
+        <div class="slds-builder-header__utilities-item">
+          <a href="javascript:void(0);" class="slds-builder-header__item-action slds-media slds-media_center">
+            <div class="slds-media__figure">
+              <span class="slds-icon_container slds-icon-utility-help slds-current-color">
+                <svg class="slds-icon slds-icon_x-small" aria-hidden="true">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#help" />
+                </svg>
+              </span>
+            </div>
+            <div class="slds-media__body">Help</div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="header_utilities slds-p-horizontal_medium slds-p-vertical_x-small slds-grid">
+      <div class="slds-col slds-col_bump-left">
+        <button class="slds-button slds-button_icon slds-button_icon-border-filled">
+          <svg class="slds-button__icon" aria-hidden="true">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#undo" />
+          </svg>
+          <span class="slds-assistive-text">Undo</span>
+        </button>
+        <button class="slds-button slds-button_icon slds-button_icon-border-filled">
+          <svg class="slds-button__icon" aria-hidden="true">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#redo" />
+          </svg>
+          <span class="slds-assistive-text">Redo</span>
+        </button>
+        <div class="slds-button-group slds-m-left_xx-small" role="group">
+          <button class="slds-button slds-button_icon slds-button_icon-border-filled">
+            <svg class="slds-button__icon" aria-hidden="true">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#cut" />
+            </svg>
+          </button>
+          <button class="slds-button slds-button_icon slds-button_icon-border-filled">
+            <svg class="slds-button__icon" aria-hidden="true">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#copy" />
+            </svg>
+          </button>
+          <button class="slds-button slds-button_icon slds-button_icon-border-filled">
+            <svg class="slds-button__icon" aria-hidden="true">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#paste" />
+            </svg>
+          </button>
+        </div>
+      </div>
+      <!-- //left utilities-->
+      <div class="slds-col_bump-right">
+        <span class="slds-text-body_regular slds-align-middle">
+          Last Saved 20 Days Ago
+          <button class="slds-button slds-button_icon ">
+            <svg class="slds-button__icon" aria-hidden="true">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#info" />
+            </svg>
+            <span class="slds-assistive-text">Info</span>
+          </button>
+        </span>
+        <button class="slds-button slds-button_icon slds-button_icon-container slds-m-right_xx-small">
+          <svg class="slds-button__icon slds-icon-text-warning" aria-hidden="true">
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#warning" />
+          </svg>
+        </button>
+        <div class="slds-form-element">
+          <span class="slds-badge slds-badge_lightest slds-badge_success slds-align-middle">
+            <span class="slds-text-color_success">Activated</span>
+            <button class="slds-button slds-button_icon slds-align-top">
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#info" />
+              </svg>
+              <span class="slds-assistive-text">Info</span>
+            </button>
+          </span>
+          <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left slds-hidden" role="tooltip" id="help" style="position: absolute; top: 37px; left: 51px;">
+            <div class="slds-popover__body">You last saved this version on 10/27/2017 3:15PM</div>
+        </div>
+        <div class="slds-button-group slds-m-left_xx-small" role="group">
+          <button class="slds-button slds-button_neutral">Debug</button>
+          <button class="slds-button slds-button_neutral">Run</button>
+        </div>
+        <button class="slds-button slds-button_neutral">Save As</button>
+        <button class="slds-button slds-button_brand">Save</button>
+      </div>
+      <!-- //left utilities-->
+    </div>
 
   <script src="/scripts/app.js"></script>
   <script type="text/javascript" src="/scripts/jquery.js"></script>
@@ -132,16 +170,16 @@
   <script>svg4everybody();</script>
   <script>
     $(function(){
-      $(".slds-button_icon").hover(function(){
+      $(".slds-badge_success .slds-button_icon").hover(function(){
         $(this).parent().next().removeClass("slds-hidden");
       },function(){
         $(this).parent().next().addClass("slds-hidden");
       });
 
-      $(".slds-button_icon").focus(function(){
+      $(".slds-badge_success .slds-button_icon").focus(function(){
         $(this).parent().next().removeClass("slds-hidden");
       })
-      $(".slds-button_icon").blur(function(){
+      $(".slds-badge_success .slds-button_icon").blur(function(){
         $(this).parent().next().addClass("slds-hidden");
       })
     })
