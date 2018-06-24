@@ -9,27 +9,6 @@
     outline: none;
   }
 }
-//Base Variants
-.slds-badge{
-  //Base styles
-  &.slds-badge_brand{
-    color: white;
-    background: $color-background-brand-primary;
-  }
-  &.slds-badge_destructive{
-    color: white;
-    background: $color-background-destructive;
-  }
-  &.slds-badge_success{
-    background: $color-background-success-dark;
-    color: white;
-  }
-  &.slds-badge_warning{
-    background: $color-background-warning;
-    color: #3e3e3c;
-  }
-}
-
 //lightest Variants
 .slds-badge.slds-badge_lightest{
   //Base styles
