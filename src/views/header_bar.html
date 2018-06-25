@@ -127,33 +127,68 @@
       </div>
       <!-- //left utilities-->
       <div class="slds-col_bump-right">
-        <span class="slds-text-body_regular slds-align-middle">
-          Last Saved 20 Days Ago
-          <button class="slds-button slds-button_icon ">
-            <svg class="slds-button__icon" aria-hidden="true">
-              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#info" />
-            </svg>
-            <span class="slds-assistive-text">Info</span>
-          </button>
-        </span>
-        <button class="slds-button slds-button_icon slds-button_icon-container slds-m-right_xx-small">
-          <svg class="slds-button__icon slds-icon-text-warning" aria-hidden="true">
-            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#warning" />
-          </svg>
-        </button>
         <div class="slds-form-element">
-          <span class="slds-badge slds-badge_lightest slds-badge_success slds-align-middle">
-            <span class="slds-text-color_success">Activated</span>
-            <button class="slds-button slds-button_icon slds-align-top">
+          <button class="slds-button slds-align-middle" aria-hastooltip="true" style="border-bottom: 1px dotted rgb(112, 110, 107)">Saved 10 days ago</button>
+          <div class="slds-popover slds-popover_tooltip slds-nubbin_top slds-hidden" role="tooltip" id="help" style="position: absolute; top: 37px; left: -97px;">
+            <div class="slds-popover__body">You last saved this version on 10/27/2017 3:15PM</div>
+        </div>
+        <div class="slds-form-element">
+          <button class="slds-button slds-button_icon slds-button_icon-container slds-m-right_xx-small" aria-haspopover="true">
+            <svg class="slds-button__icon slds-icon-text-warning" aria-hidden="true">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#warning" />
+            </svg>
+          </button>
+          <section class="slds-popover slds-popover_warning slds-nubbin_top slds-hidden" role="dialog" aria-labelledby="dialog-heading-id-2" aria-describedby="dialog-body-id-2" style="position:absolute; left: -143px; top:37px;">
+            <button class="slds-button slds-button_icon slds-button_icon-small slds-float_right slds-popover__close slds-button_icon" title="Close dialog">
+              <svg class="slds-button__icon" aria-hidden="true">
+                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#close" />
+              </svg>
+              <span class="slds-assistive-text">Close dialog</span>
+            </button>
+            <header class="slds-popover__header">
+              <div class="slds-media slds-media_center slds-has-flexi-truncate ">
+                <div class="slds-media__figure">
+                  <span class="slds-icon_container slds-icon-utility-warning">
+                    <svg class="slds-icon slds-icon_x-small slds-icon-text-default" aria-hidden="true">
+                      <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#warning" />
+                    </svg>
+                  </span>
+                </div>
+                <div class="slds-media__body">
+                  <h2 class="slds-truncate slds-text-heading_medium" id="dialog-heading-id-2" title="Review warning">Review warnings</h2>
+                </div>
+              </div>
+            </header>
+            <div class="slds-popover__body slds-popover_warning__body slds-scrollable_y" id="dialog-body-id-2" style="max-height: 200px;">
+              <div class="slds-text-title_caps slds-border_bottom slds-p-vertical_x-small slds-m-bottom_x-small">Validation Warnings</div>
+              <p>These must be fixed before you can activate the flow</p>
+              <ul class='slds-list_dotted'>
+                <li><strong>step (step):</strong> Flow of contains step elements. You can not activate a flow that contains steps</li>
+                <li><strong>step (step):</strong> Flow of contains step elements. You can not activate a flow that contains steps</li>
+              </ul>
+              <div class="slds-text-title_caps slds-border_bottom slds-border_top slds-p-vertical_x-small slds-m-bottom_x-small slds-m-vertical_small">General Warnings</div>
+              <p>These don’t prevent activation, but can cause runtime issues</p>
+              <ul class='slds-list_dotted'>
+                <li><strong>myVar (Assignment):</strong> “myVar” is not connecting to anything</li>
+                <li><strong>myVar2 (Assignment):</strong> “myVar2” is not connecting to anything</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <div class="slds-form-element">
+          <span class="slds-badge slds-theme_success slds-align-middle">
+            <span>Activated</span>
+            <button class="slds-button slds-button_icon slds-align-top slds-button_icon-inverse" aria-hastooltip="true">
               <svg class="slds-button__icon" aria-hidden="true">
                 <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/assets/icons/utility-sprite/svg/symbols.svg#info" />
               </svg>
-              <span class="slds-assistive-text">Info</span>
+              <span class="slds-assistive-text">Provide description of action</span>
             </button>
+            <div class="slds-popover slds-popover_tooltip slds-nubbin_top-right slds-hidden" role="tooltip" id="help" style="position: absolute; top: 37px; left: -151px;">
+              <div class="slds-popover__body">You must save a new version to edit</div>
+          </div>
           </span>
-          <div class="slds-popover slds-popover_tooltip slds-nubbin_top-left slds-hidden" role="tooltip" id="help" style="position: absolute; top: 37px; left: 51px;">
-            <div class="slds-popover__body">You last saved this version on 10/27/2017 3:15PM</div>
-        </div>
+
         <div class="slds-button-group slds-m-left_xx-small" role="group">
           <button class="slds-button slds-button_neutral">Debug</button>
           <button class="slds-button slds-button_neutral">Run</button>
@@ -170,17 +205,22 @@
   <script>svg4everybody();</script>
   <script>
     $(function(){
-      $(".slds-badge_success .slds-button_icon").hover(function(){
-        $(this).parent().next().removeClass("slds-hidden");
+      var tooltip = $("[aria-hastooltip='true']");
+      var popover = $("[aria-haspopover='true']");
+      tooltip.hover(function(){
+        $(this).next().removeClass("slds-hidden");
       },function(){
-        $(this).parent().next().addClass("slds-hidden");
+        $(this).next().addClass("slds-hidden");
+      });
+      popover.click(function(){
+        $(this).next().removeClass("slds-hidden");
       });
 
-      $(".slds-badge_success .slds-button_icon").focus(function(){
-        $(this).parent().next().removeClass("slds-hidden");
+      $("[aria-hastooltip='true'], [aria-haspopover='true']").focus(function(){
+        $(this).next().removeClass("slds-hidden");
       })
-      $(".slds-badge_success .slds-button_icon").blur(function(){
-        $(this).parent().next().addClass("slds-hidden");
+      $("[aria-hastooltip='true'], [aria-haspopover='true']").blur(function(){
+        $(this).next().addClass("slds-hidden");
       })
     })
   </script>
